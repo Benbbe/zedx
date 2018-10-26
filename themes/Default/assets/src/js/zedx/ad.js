@@ -204,6 +204,7 @@ $(document).ready(function() {
       dataType: 'json',
       data: function(term, page) {
         return {
+          key: 'AIzaSyCi-wcFPiq4NKeeiB_uDCSyDzm7Np6au2I',
           address: term, // search term
           sensor: false
         };
@@ -219,6 +220,7 @@ $(document).ready(function() {
       if (formatted_address !== "") {
         $.ajax("https://maps.google.com/maps/api/geocode/json", {
           data: {
+            key: 'AIzaSyCi-wcFPiq4NKeeiB_uDCSyDzm7Np6au2I',
             sensor: false,
             address: formatted_address,
           },
@@ -578,6 +580,7 @@ $(document).ready(function() {
       dataType: 'json',
       data: function(term, page) {
         return {
+          key: 'AIzaSyCi-wcFPiq4NKeeiB_uDCSyDzm7Np6au2I',
           address: term, // search term
           components: $("#ZxAjaxGeo-search").data("components"), // Filter by country
           sensor: false
@@ -594,6 +597,7 @@ $(document).ready(function() {
       if (id !== "") {
         $.ajax("https://maps.google.com/maps/api/geocode/json", {
           data: {
+            key: 'AIzaSyCi-wcFPiq4NKeeiB_uDCSyDzm7Np6au2I',
             sensor: false,
             components: $("#ZxAjaxGeo-search").data("components"), // Filter by country
             address: id,
